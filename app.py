@@ -1,6 +1,7 @@
 import streamlit as st
 from calculator import calculate_progress
 from sample_data import sample_data
+from advisor import generate_advice
 
 st.title("📊 Grade Progress Tracker")
 
@@ -82,4 +83,11 @@ for category in result["categories"]:
     st.write(f"• Earned: {category['earned']}%")
     st.write(f"• Remaining: {category['remaining']}%")
     st.markdown("---")
+
+st.subheader("📌 AI Strategy")
+
+advice_list = generate_advice(result)
+for tip in advice_list:
+    st.markdown(f"- {tip}")
+
 
