@@ -9,9 +9,6 @@ st.title("📊 Grade Progress Tracker")
 # 1️⃣ Set target grade from user input
 target = st.number_input("Enter your target final grade (%):", min_value=0.0, max_value=100.0, value=90.0)
 
-# 2️⃣ For now: test with sample data
-sample_data = [...]  # from earlier or imported
-
 # 3️⃣ Run calculation
 result = calculate_progress(sample_data, target)
 
