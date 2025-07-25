@@ -1,5 +1,6 @@
 import streamlit as st
 from calculator import calculate_progress
+from sample_data import sample_data
 
 # (Optional) You can move sample data to a new file if you want (see #4 below)
 
